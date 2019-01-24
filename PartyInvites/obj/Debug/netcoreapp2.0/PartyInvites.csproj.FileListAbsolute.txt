@@ -1,0 +1,11 @@
+C:\codeWorkspace\repoPartyInvites\PartyInvites\bin\Debug\netcoreapp2.0\PartyInvites.deps.json
+C:\codeWorkspace\repoPartyInvites\PartyInvites\bin\Debug\netcoreapp2.0\PartyInvites.runtimeconfig.json
+C:\codeWorkspace\repoPartyInvites\PartyInvites\bin\Debug\netcoreapp2.0\PartyInvites.runtimeconfig.dev.json
+C:\codeWorkspace\repoPartyInvites\PartyInvites\bin\Debug\netcoreapp2.0\PartyInvites.dll
+C:\codeWorkspace\repoPartyInvites\PartyInvites\obj\Debug\netcoreapp2.0\PartyInvites.csprojAssemblyReference.cache
+C:\codeWorkspace\repoPartyInvites\PartyInvites\obj\Debug\netcoreapp2.0\PartyInvites.csproj.CoreCompileInputs.cache
+C:\codeWorkspace\repoPartyInvites\PartyInvites\obj\Debug\netcoreapp2.0\PartyInvites.AssemblyInfoInputs.cache
+C:\codeWorkspace\repoPartyInvites\PartyInvites\obj\Debug\netcoreapp2.0\PartyInvites.AssemblyInfo.cs
+C:\codeWorkspace\repoPartyInvites\PartyInvites\bin\Debug\netcoreapp2.0\PartyInvites.pdb
+C:\codeWorkspace\repoPartyInvites\PartyInvites\obj\Debug\netcoreapp2.0\PartyInvites.dll
+C:\codeWorkspace\repoPartyInvites\PartyInvites\obj\Debug\netcoreapp2.0\PartyInvites.pdb

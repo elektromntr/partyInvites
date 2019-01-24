@@ -1,0 +1,38 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>RsvpForm</title>
+</head>
+<body>
+    <form asp-action="RsvpForm" method="post">
+        <p>
+            <label asp-for="Name">Imię i nazwisko:</label>
+            <input asp-for="Name" />
+        </p>
+        <p>
+            <label asp-for="Email">Adres email:</label>
+            <input type="email" asp-for="Email" />
+        </p>
+        <p>
+            <label asp-for="Phone">Numer telefonu:</label>
+            <input maxlength="9" asp-for="Phone"/>
+        </p>
+        <p>
+            <label>Wpadasz na przyjęcie?</label>
+            <select asp-for="WillAttend">
+                <option value="">Wybierz opcję</option>
+                <option value="true">Tak, przyjdę</option>
+                <option value="false">Niestety, nie przyjdę</option>
+            </select>
+        </p>
+        <button type="submit">Wyślij odpowiedź</button>
+    </form>
+</body>
+</html>
