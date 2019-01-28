@@ -10,16 +10,17 @@ namespace PartyInvites.Controllers
 {
     public class HomeController : Controller
     {
+        [HttpGet]
         public ViewResult RsvpForm()
         {
             return View();
         }
 
         [HttpPost]
-        public ViewResult RsvpForm()
+        public IActionResult RsvpForm(GuestResponse guestResponse)
         {
-            //obsługa Repository Responses s/53
-            return View();
+            Repository.AddResponse(guestResponse);
+            return View("Thanks", guestResponse);
         }
 
         public IActionResult Index()
@@ -27,6 +28,11 @@ namespace PartyInvites.Controllers
             int hour = DateTime.Now.Hour;
             ViewBag.Greeting = hour < 17 ? "Dzień dobry" : "Dobry wieczór";
             return View("MyView");
+        }
+
+        public IActionResult ListResponses()
+        {
+            return View(Repository.Responses.Where(r => r.WillAttend == true));
         }
 
         public IActionResult About()
