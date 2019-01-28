@@ -7,33 +7,40 @@
 
 <html>
 <head>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <meta name="viewport" content="width=device-width" />
     <title>RsvpForm</title>
 </head>
 <body>
     <form asp-action="RsvpForm" method="post">
+        
         <div asp-validation-summary="All"></div>
-        <p>
-            <label asp-for="Name">Imię i nazwisko:</label>
+        <div class="input-field col s12">
             <input asp-for="Name" />
-        </p>
-        <p>
-            <label asp-for="Email">Adres email:</label>
+            <label asp-for="Name">Imię i nazwisko:</label>
+        </div>
+        <div class="input-field col s12">
             <input type="email" asp-for="Email" />
-        </p>
-        <p>
-            <label asp-for="Phone">Numer telefonu:</label>
+            <label asp-for="Email">Adres email:</label>
+        </div>
+        <div class="input-field col s12">
             <input maxlength="9" asp-for="Phone"/>
-        </p>
-        <p>
-            <label>Wpadasz na przyjęcie?</label>
+            <label asp-for="Phone">Numer telefonu:</label>
+        </div>
+        <div class="input-field col s12">
             <select asp-for="WillAttend">
                 <option value="">Wybierz opcję</option>
                 <option value="true">Tak, przyjdę</option>
                 <option value="false">Niestety, nie przyjdę</option>
             </select>
-        </p>
-        <button type="submit">Wyślij odpowiedź</button>
+            <label>Wpadasz na przyjęcie?</label>
+        </div>
+        <div><button type="submit">Wyślij odpowiedź</button></div>
+        
     </form>
 </body>
 </html>
